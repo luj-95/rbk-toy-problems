@@ -26,6 +26,15 @@ loopAString('abcd');
 
 */
 function loopAString(string) {
+  var x= ''
+  var i=0
+  while(i<string.length){
+    x=x+string.charAt(i)+'\n'
+    i=i+1
+  }
+  return x
+}
+
   // create an index variable
   // create a loop which iterates over the input string
   // log current string character to the console
