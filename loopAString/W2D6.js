@@ -13,6 +13,9 @@ loopAString('nodeJS');
   // e
   // J
   // S
+  // done 
+  
+ 
 
 loopAString('abcd');
 // console output:
@@ -23,10 +26,10 @@ loopAString('abcd');
 
 */
 function loopAString(string) {
-  // create an index variable
-  // create a loop which iterates over the input string
-  // log current string character to the console
-  // increment value of index variable
+    // create an index variable
+    // create a loop which iterates over the input string
+    // log current string character to the console
+    // increment value of index variable
 }
 
 
@@ -35,6 +38,4 @@ function loopAString(string) {
 //followed by a number starting from zero(solve it using while loop).
 // reverseStr('hello'); "o1l2l3e4h"
 // Your code is here
-
-
-
+//yes its works
