@@ -27,11 +27,15 @@ loopAString('abcd');
 */
 function loopAString(string) {
   // create an index variable
+  var i = 0
   // create a loop which iterates over the input string
+  while (i < string.length){
   // log current string character to the console
+console.log(string.charAt(i))
   // increment value of index variable
+  i++
 }
-
+}
 
 // 2-Write a function called reverseStr that takes a string as an parameter 
 //and returns the reverse of each letter 
@@ -39,5 +43,14 @@ function loopAString(string) {
 // reverseStr('hello'); "o1l2l3e4h"
 // Your code is here
 
+function reverseStr (string){
+  var reverse = ""
+  var num = 0
+var i = string.length
+ 
+  while (i > 0){
 
-
+reverse = reverse + num + string.charAt(i)
+  i++
+}
+}
