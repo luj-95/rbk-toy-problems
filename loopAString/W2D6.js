@@ -1,5 +1,5 @@
-/*
-1-Write a function called loopAString that takes one parameter, a string of characters, 
+
+/*1-Write a function called loopAString that takes one parameter, a string of characters, 
 and logs all of its characters (one at a time) to the console. 
 Your function should use a while loop to log each character 
 from the beginning to the end of the string, then return nothing. 
@@ -10,7 +10,7 @@ loopAString('nodeJS');
   // n
   // o
   // d
-  // e
+  
   // J
   // S
   // done 
@@ -26,11 +26,13 @@ loopAString('abcd');
 
 */
 function loopAString(string) {
-  // create an index variable
-  // create a loop which iterates over the input string
-  // log current string character to the console
-  // increment value of index variable
+ var x=0;
+ while(x<string.length){
+  console.log(string.charAt(x))
+  x++
+ }
 }
+console.log(loopAString('rand'))
 
 
 // 2-Write a function called reverseStr that takes a string as an parameter 
@@ -41,3 +43,16 @@ function loopAString(string) {
 
 
 
+function reversStr(string){
+  var str=''
+  var i=0;
+  var z=string.length-1
+  while(z>=0){
+    str=str+string[z]+i;
+    z--;
+    i++;}
+    reversStr
+  }
+  }
+
+}
