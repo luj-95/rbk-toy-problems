@@ -3,7 +3,14 @@
 and logs all of its characters (one at a time) to the console. 
 Your function should use a while loop to log each character 
 from the beginning to the end of the string, then return nothing. 
-Below is an example of the code running.
+Below is an example of the code running.*/
+function loopAString(str){
+  var x=0
+  while(x<str.length){
+    console.log(str.charAt(x))
+    x++
+  }
+}
 
 loopAString('nodeJS');
 // console output:
@@ -13,6 +20,9 @@ loopAString('nodeJS');
   // e
   // J
   // S
+  // done 
+  
+ 
 
 loopAString('abcd');
 // console output:
@@ -21,13 +31,7 @@ loopAString('abcd');
   // c
   // d
 
-*/
-function loopAString(string) {
-  // create an index variable
-  // create a loop which iterates over the input string
-  // log current string character to the console
-  // increment value of index variable
-}
+
 
 
 // 2-Write a function called reverseStr that takes a string as an parameter 
@@ -37,4 +41,17 @@ function loopAString(string) {
 // Your code is here
 
 
+function reverseStr(string){
+ var n=string.length-1
+  var x= ""
+  var y=1
+  while (n>=0){
+    var x= x +string.charAt(n)+y
+
+    n=n-1
+    y++
+    
+  }
+  return x 
+}
 
