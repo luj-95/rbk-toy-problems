@@ -27,14 +27,28 @@ function loopAString(string) {
   // create a loop which iterates over the input string
   // log current string character to the console
   // increment value of index variable
+  var index=""
+  var i = 0;
+for(var i=0 ;i < string.length;i++) {
+  index = string[i]
+    console.log(index);
+ }
 }
-
 
 // 2-Write a function called reverseStr that takes a string as an parameter 
 //and returns the reverse of each letter 
 //followed by a number starting from zero(solve it using while loop).
 // reverseStr('hello'); "o1l2l3e4h"
 // Your code is here
-
-
+function reverseStr(str){
+  var i=str.length-1
+  var num=0
+  var newStr=""
+  while(i>=0){
+    newStr+=num+str[i]
+    num++
+    i--
+  }
+  return newStr
+}
 
