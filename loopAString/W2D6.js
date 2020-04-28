@@ -5,7 +5,7 @@ Your function should use a while loop to log each character
 from the beginning to the end of the string, then return nothing. 
 Below is an example of the code running.
 
-loopAString('nodeJS');
+//loopAString('nodeJS');
 // console output:
   // n
   // o
