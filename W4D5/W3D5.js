@@ -8,6 +8,16 @@ countNumOfStrings(["There is only one string in this example"]); //1
 Hint: Recall typeof? If not: check it out on MDN. :-)
 */
 
+function countNumOfStrings(array) {
+    var a = " "
+    var count = 0
+    for (var i = 0; i < array.length; i++) {
+        if (typeof(array[i]) === typeof(a)) {
+            count += 1
+        }
+    }
+    return count
+}
 
 /*
 2- Write a function called  listLengthOfAllWords that takes an array of words (strings), 
@@ -18,7 +28,12 @@ Calling your function should result in:
 listLengthOfAllWords(['hello', 'world', 'I', 'can', 'code']); //[5, 5, 1, 3, 4];
 
 */
-
+function listLengthOfAllWords(strings) {
+    array = []
+    for (var i = 0; i < string.length; i++) {
+        array.push(string[i].length)
+    }
+}
 /*
 Write a function called flipPairs that takes a string a parameter 
 and returns the given string after Flip every pair of characters.
@@ -26,4 +41,12 @@ Example:
 var input = 'check out how interesting this problem is, it\'s insanely interesting!';
 var output = flipPairs(input);
 console.log(output); // --> hcce kuo toh wnietertsni ghtsip orlbmei ,si 't sniasenyli tnreseitgn!*/
-//just try to practice on github
+function flipPairs(string) {
+    var s = ""
+    for (var i = 0; i < string.length; i++) {
+        if (i % 2 === 0) {
+            // charAt(i) = i + 1
+        }
+    }
+
+}
