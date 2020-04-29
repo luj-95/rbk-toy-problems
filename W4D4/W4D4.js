@@ -1,3 +1,5 @@
+
+
 /*
 1- Write a function called countNumOfStrings that takes an array of mixed elements (different data types) 
 and returns the number of strings there are in the array.
@@ -7,6 +9,11 @@ countNumOfStrings(["foo", 2, 10, "bar", 5, false, {}, "baz"]); //3
 countNumOfStrings(["There is only one string in this example"]); //1
 Hint: Recall typeof? If not: check it out on MDN. :-)
 */
+
+function countNumOfStrings (arr){
+    var filter = arr.filter(element =>typeof(element)==="string")
+    return filter.length
+}
 
 
 /*
@@ -19,6 +26,13 @@ listLengthOfAllWords(['hello', 'world', 'I', 'can', 'code']); //[5, 5, 1, 3, 4];
 
 */
 
+function listLengthOfAllWords (arr){
+    for(var i=0;arr.length>i;i++){
+        arr[i]= arr[i].length
+    }
+    arr
+}
+
 /*
 Write a function called flipPairs that takes a string a parameter 
 and returns the given string after Flip every pair of characters.
@@ -26,5 +40,14 @@ Example:
 var input = 'check out how interesting this problem is, it\'s insanely interesting!';
 var output = flipPairs(input);
 console.log(output); // --> hcce kuo toh wnietertsni ghtsip orlbmei ,si 't sniasenyli tnreseitgn!
- */
 
+ */
+function flipPairs (str){
+    var modiStr = ""
+    for (var i=0;str.length>i;i=i+2){
+        var preChar = str[i]
+        str[i]=str[i+1]
+        str[i-1]= preChar
+    }
+    return str
+}
