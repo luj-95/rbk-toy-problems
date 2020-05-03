@@ -10,4 +10,17 @@ For example, one could return an object such as:
 Another example could be:
 
 { name: "Gelato", countryOfOrigin: "Italy", flavor: "Chocolate Chip" }
-*/
+*/ function favoritedessert(name,place,color){
+  var obj={
+           this.name=name
+           this.place=place
+           this.color=color
+          }
+  return obj 
+  }
+var dessert1={name:"namib",place:"southAfrica",color:"gray"}
+var desser2={name:"Atacama",place:"South America",color:"brown"}
+var dessert3={name:"Gobi",place:"China/Mongolia",color:"light brown"}
+var desserts=[dessert1,dessert2,dessert3]
+
+ 
